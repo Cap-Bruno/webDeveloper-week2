@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+p{
+    margin-top: 5px;
+    padding: 0px 10px 10px 10px;
+}
+.container{
+    display: flex;
+    margin: 10px;
+}
+
+.bloco{
+    background-color: rgb(168, 167, 167);
+    margin: 0px 10px;
+    border: 2px solid black;
+}
+
+h3{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.blue{
+    background-color: rgb(78, 78, 248);
+    justify-content: center;
+    width: 90px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.red{
+    background-color: rgb(248, 78, 78);
+    justify-content: center;
+    width: 90px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;;
+}
+
+.yellow{
+    background-color: rgb(220, 248, 78);
+    justify-content: center;
+    width: 90px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .bloco{
+        margin-bottom: 15px;
+    }
+
+    .col-01{
+        width: 47%;
+    }
+    .col-02{
+        width: 47%;
+    }
+    .col-03{
+        width: 96%;
+    }
+}
+
+@media (max-width: 767px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bloco{
+        margin-bottom: 15px;
+    }
+
+}
